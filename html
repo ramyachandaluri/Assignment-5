@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-commerce Product Showcase</title>   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="mb-4 text-center">Products</h1>
+    <div class="row row-cols-1 row-cols-md-4 g-4" id="box">
+          </div>
+  </div>
+
+    <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img id="modalImage" class="img-fluid mb-3" />
+          <p id="modalDescription"></p>
+          <p><strong>Category:</strong> <span id="modalCategory"></span></p>
+          <p><strong>Brand:</strong> <span id="modalBrand"></span></p>
+          <p><strong>Price:</strong> ₹<span id="modalPrice"></span></p>
+          <p><strong>Stock:</strong> <span id="modalStock"></span> units</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index1.js"></script>
+</body>
+</html>
